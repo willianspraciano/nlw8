@@ -48,7 +48,7 @@ function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-        {feedbackTypes ? (
+        {feedbackSent ? (
           <Success onSendAnotherFeedback={handleRestartFeedback} />
         ) : (
           <>

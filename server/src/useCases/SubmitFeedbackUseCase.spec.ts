@@ -2,7 +2,7 @@
 //   expect(2 + 2).toBe(4);
 // });
 
-const createFeedbackSpy = jest.fn();
+const createFeedbackSpy = jest.fn(); // funções espiãs que não tem funcionalidade, mas que dá pra saber quando eleas são chamadas
 const sendMailSpy = jest.fn();
 
 import { SubmitFeedbackUseCase } from './SubmitFeedbackUseCase';

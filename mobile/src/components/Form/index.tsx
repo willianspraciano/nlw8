@@ -78,15 +78,15 @@ export function Form({
         </TouchableOpacity>
 
         <View style={styles.titleContainer}>
-          <Image source={feedbackTypeInfo.image} style={styles.image} />
-          <Text style={styles.titleText}>{feedbackTypeInfo.title}</Text>
+          <Image source={feedbackTypeInfo?.image} style={styles.image} />
+          <Text style={styles.titleText}>{feedbackTypeInfo?.title}</Text>
         </View>
       </View>
 
       <TextInput
         multiline
         style={styles.input}
-        placeholder='Algo não está funcionando be,? Queremos corrigir. Conte com detalhes o que está acontecendo...'
+        placeholder='Algo não está funcionando bem? Queremos corrigir. Conte com detalhes o que está acontecendo...'
         placeholderTextColor={theme.colors.text_secondary}
         autoCorrect={false}
         onChangeText={setComment}
